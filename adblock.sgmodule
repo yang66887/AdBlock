@@ -23,6 +23,7 @@ DOMAIN-SUFFIX,admobile.top,Reject
 DOMIAN-SUFFIX,admobile.mobi,Reject
 DOMAIN-SUFFIX,admobile.cc,Reject
 DOMAIN-SUFFIX,sohu.com,Reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,Reject
 
 [URL Rewrite]
 ^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
