@@ -1,0 +1,31 @@
+#!name = 自定义去广告模块 
+#!desc = MITM + Rule
+#!author = 蛋蛋の超人
+
+[Rule]
+DOMAIN-SUFFIX,adtroop.cn,Reject
+DOMAIN-SUFFIX,ubixioe.com,Reject
+DOMAIN-SUFFIX,umeng.com,Reject
+DOMAIN-SUFFIX,umengcloud.com,Reject
+DOMAIN-SUFFIX,zijieapi.com,Reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,Reject
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,Reject
+DOMAIN-SUFFIX,volces.com,Reject
+DOMAIN-SUFFIX,bytescm.com,Reject
+DOMAIN-SUFFIX,byteurl.com,Reject
+DOMAIN-SUFFIX,ctobsnssdk.com,Reject
+DOMAIN-SUFFIX,youzan.com,Reject
+DOMAIN-SUFFIX,youzanyun.com,Reject
+DOMIAN-SUFFIX,yzcdn.cn,Reject
+DOMAIN-SUFFIX,jiguang.cn,Reject
+DOMAIN-SUFFIX,tianmu.mobi,Reject
+DOMAIN-SUFFIX,admobile.top,Reject
+DOMIAN-SUFFIX,admobile.mobi,Reject
+DOMAIN-SUFFIX,admobile.cc,Reject
+DOMAIN-SUFFIX,sohu.com,Reject
+
+[URL Rewrite]
+^https?:\/\/m\.815616\.xyz\/api\/v2\/myinfo https://tv.superegg.buzz/test/api/v2/myinfo 302
+
+[MITM]
+hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com
