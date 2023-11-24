@@ -34,6 +34,7 @@ DOMAIN-SUFFIX,xd.cn,Reject
 ^https?:\/\/router.gamersky.com/@/ad/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router2.gamersky.com/@/app/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router2.gamersky.com/@/userCenterPage/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
+^https?:\/\/bgg.baidu.com\/bgg.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn
