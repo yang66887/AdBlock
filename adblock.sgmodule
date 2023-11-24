@@ -25,6 +25,9 @@ DOMAIN-SUFFIX,admobile.cc,Reject
 DOMAIN-SUFFIX,sohu.com,Reject
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,Reject
 DOMAIN-SUFFIX,xd.cn,Reject
+DOMAIN-SUFFIX,tagtic.cn,Reject
+DOMAIN-SUFFIX,e.kuaishou.com,Reject
+DONMAIN-SUFFIX,snssdk.com,Reject
 
 [URL Rewrite]
 # 山丘阅读会员解锁
@@ -37,4 +40,4 @@ DOMAIN-SUFFIX,xd.cn,Reject
 ^https?:\/\/router2.gamersky.com/@/recommend.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 
 [MITM]
-hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn
+hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn*.kuaishou.com,*.snssdk.com
