@@ -27,7 +27,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,Reject
 DOMAIN-SUFFIX,xd.cn,Reject
 DOMAIN-SUFFIX,tagtic.cn,Reject
 DOMAIN-SUFFIX,e.kuaishou.com,Reject
-DONMAIN-SUFFIX,snssdk.com,Reject
+DOMAIN-SUFFIX,snssdk.com,Reject
 
 [URL Rewrite]
 # 山丘阅读会员解锁
