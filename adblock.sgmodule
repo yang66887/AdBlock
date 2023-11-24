@@ -26,10 +26,11 @@ DOMAIN-SUFFIX,sohu.com,Reject
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,Reject
 DOMAIN-SUFFIX,xd.cn,Reject
 # 游民星空开屏
-DOMAIN,appapi2click.gamersky.com,Reject
+#DOMAIN,appapi2click.gamersky.com,Reject
 
 [URL Rewrite]
 ^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
+^https?:\/\/appapi2click.gamersky.com.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn
