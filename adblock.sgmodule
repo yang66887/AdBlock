@@ -27,6 +27,7 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,Reject
 DOMAIN-SUFFIX,xd.cn,Reject
 # 游民星空测试
 DOMAIN,sdk.e.qq.com,Reject
+DOMAIN,appapi2click.gamersky.com,Reject
 
 [URL Rewrite]
 ^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
