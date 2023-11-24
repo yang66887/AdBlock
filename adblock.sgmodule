@@ -29,7 +29,7 @@ DOMAIN-SUFFIX,xd.cn,Reject
 [URL Rewrite]
 # 山丘阅读会员解锁
 ^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
-# 游民星空开屏
+# 游民星空去开屏广告
 ^https?:\/\/appapi2click.gamersky.com.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 
 [MITM]
