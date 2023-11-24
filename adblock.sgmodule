@@ -28,6 +28,8 @@ DOMAIN-SUFFIX,xd.cn,Reject
 
 [URL Rewrite]
 ^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
+# 游民星空测试
+^https?:\/\/appapi2click\.gamersky\.com/v1/statisticAd.*$ - Reject
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn
