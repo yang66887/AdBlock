@@ -1,5 +1,5 @@
 #!name = 去牛皮藓
-#!desc = 自用 去广告 + 会员解锁
+#!desc = 自用 去广告
 #!author = 蛋蛋の超人
 
 [Rule]
@@ -30,14 +30,13 @@ DOMAIN-SUFFIX,e.kuaishou.com,Reject
 DOMAIN-SUFFIX,snssdk.com,Reject
 
 [URL Rewrite]
-# 山丘阅读会员解锁
-^https?:\/\/m\.815616\.xyz(\/api\/v2\/myinfo)(.*)$ https://raw.githubusercontent.com/yang66887/AdBlock/main/$1 302
 # 游民星空
 ^https?:\/\/appapi2click.gamersky.com.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router.gamersky.com/@/ad/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router2.gamersky.com/@/app/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router2.gamersky.com/@/userCenterPage/.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 ^https?:\/\/router2.gamersky.com/@/recommend.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
+^https?:\/\/router2.gamersky.com/@/ad.*$ https://raw.githubusercontent.com/yang66887/AdBlock/main/status 302
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn*.kuaishou.com,*.snssdk.com
