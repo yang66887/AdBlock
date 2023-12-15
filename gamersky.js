@@ -12,6 +12,9 @@ for (let i in listElements) {
   if(temp.title == "EPIC游戏商城假日特卖"){
     listElements.splice(i, 1)
   }
+  if(temp.title == "推荐专题"){
+    listElements.splice(i, 1)
+  }
 }
 
 $done({body: JSON.stringify(body)});
