@@ -48,8 +48,8 @@ DOMAIN-SUFFIX,yangkeduo.com,Reject
 ^https?:\/\/imgf.gamersky.com\/img\/tqbc.*$ - Reject
 ^https?:\/\/item-statistics\.gamersky\.com:8089\/statistics\/event.*$ - Reject
 
-[Script]
-游民星空去广告=type=http-response,pattern=^https?:\/\/router2\.gamersky\.com\/@\/lists\/getListElements,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
+#[Script]
+#游民星空去广告=type=http-response,pattern=^https?:\/\/router2\.gamersky\.com\/@\/lists\/getListElements,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn*.kuaishou.com,*.snssdk.com
