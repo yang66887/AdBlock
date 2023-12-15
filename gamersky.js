@@ -1,11 +1,17 @@
 var body = JSON.parse($response.body);
 var listElements = body.listElements;
-var tempList = [];
-for (var i in listElements) {
-  if(listElements[i].adId == "0")
-  {
-    tempList.push(listElements[i]);
+
+function deleteListAd(list){
+  let tempList = []
+  for (let i in list) {
+    let temp = list[i]
+    if(temp.adId == "0")
+    {
+      tempList.push(temp)
+    }
   }
+  return tempList
 }
-listElements = tempList;
+
+listElements = deleteListAd(listElements)
 $done({body: JSON.stringify(body)});
