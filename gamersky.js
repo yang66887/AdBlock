@@ -14,6 +14,9 @@ if(listElements != ""){
 //        }
 //      }
 //    }
+    if(!temp.adId){
+      listElements.splice(i, 1)
+    }
     if(temp.adId != "0"){
       listElements.splice(i, 1)
     }
