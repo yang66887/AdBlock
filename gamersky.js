@@ -9,6 +9,9 @@ for (let i in listElements) {
   if(temp.adId != "0"){
     listElements.splice(i, 1)
   }
+  if(temp.title == "EPIC游戏商城假日特卖"){
+    listElements.splice(i, 1)
+  }
 }
 
 $done({body: JSON.stringify(body)});
