@@ -14,7 +14,7 @@ if(listElements != ""){
         }
       }
     }
-    if(temp.adId != "0"){
+    if(!temp.childElements && temp.adId != "0"){
       listElements.splice(i, 1)
     }
     if(temp.title == "EPIC游戏商城假日特卖"){
