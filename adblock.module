@@ -43,7 +43,6 @@ DOMAIN-SUFFIX,yangkeduo.com,Reject
 ^https?:\/\/router\d?\.gamersky\.com\/@\/app/.*$ - Reject
 ^https?:\/\/router\d?\.gamersky\.com\/@\/userCenterPage\/.*$ - Reject
 ^https?:\/\/router\d?\.gamersky\.com\/@\/recommend.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/ad\/.*$ - Reject
 ^https?:\/\/appapi\d?\.gamersky\.com\/v5\/CheckLogin.*$ - Reject
 ^https?:\/\/item-statistics\.gamersky\.com:8089\/statistics\/event.*$ - Reject
 
