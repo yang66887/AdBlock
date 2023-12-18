@@ -9,7 +9,6 @@ if(data){
     let subject = data[i].subject
     let forumname = data[i].forumname
     let author = data[i].author
-    //let titlefont_api = data[i].titlefont_api
     if(subject.match(subjectExp)){
       data.splice(i, 1)
       continue
@@ -22,10 +21,6 @@ if(data){
       data.splice(i, 1)
       continue
     }
-    //if(titlefont_api){
-    //  data.splice(i, 1)
-    //  continue
-    //}
   }
 }
 
