@@ -4,7 +4,7 @@
 #!author = 蛋蛋の超人
 
 [URL Rewrite]
-^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=app_inter&__act=banner_list$ - Reject
+^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - Reject
 ^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - Reject
 
 [Script]
