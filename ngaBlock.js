@@ -9,14 +9,22 @@ if(data){
     let subject = data[i].subject
     let forumname = data[i].forumname
     let author = data[i].author
+    let titlefont_api = data[i].titlefont_api
+    if(titlefont_api){
+      data.splice(i, 1)
+      continue
+    }
     if(subject.match(subjectExp)){
       data.splice(i, 1)
+      continue
     }
     if(forumname.match(forumnameExp)){
       data.splice(i, 1)
+      continue
     }
     if(author.match(authorExp)){
       data.splice(i, 1)
+      continue
     }
   }
 }
