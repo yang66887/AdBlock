@@ -3,6 +3,9 @@
 #!desc = 自用NGA屏蔽插件
 #!author = 蛋蛋の超人
 
+[URL Rewrite]
+^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=app_inter&__act=banner_list$ - Reject
+
 [Script]
 NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=subject&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngaBlock.js
 
