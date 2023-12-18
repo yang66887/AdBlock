@@ -8,7 +8,7 @@
 ^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
 
 [Script]
-NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=subject&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngaBlock.js
+NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngaBlock.js
 
 [MITM]
 hostname = %APPEND% ngabbs.com
