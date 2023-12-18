@@ -29,7 +29,7 @@ if(result.tsubject){
   for(let y = result.length - 1; y >= 0; y--){
     let username = result[y].author.username
     if(username.match(authorExp)){
-      result.splice(i, 1)
+      result.splice(y, 1)
       continue
     }
   }
