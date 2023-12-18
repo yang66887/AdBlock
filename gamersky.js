@@ -5,15 +5,6 @@ var channels = body.channels
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-//    if(!temp.adId && temp.childElements){
-//      let childElements = temp.childElements
-//      for (let y in childElements) {
-//        let tempChild = chileElements[y]
-//        if(tempChild.adId != "0"){
-//          childElements.splice(y, 1)
-//        }
-//      }
-//    }
     if(!temp.adId){
       listElements.splice(i, 1)
     }
