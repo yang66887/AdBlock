@@ -7,18 +7,23 @@ if(listElements){
     let temp = listElements[i]
     if(temp.type == "huanDeng"){
       listElements.splice(i, 1)
+      continue
     }
     if(temp.type == "hengFu"){
       listElements.splice(i, 1)
+      continue
     }
     if(temp.type == "zhuanTi_TuiJian_hengXiangGunDong"){
       listElements.splice(i, 1)
+      continue
     }
     if(temp.adId != "0" && type != "pingLun"){
       listElements.splice(i, 1)
+      continue
     }
     if(temp.title == "EPIC游戏商城假日特卖"){
       listElements.splice(i, 1)
+      continue
     }
   }
 }
@@ -28,6 +33,7 @@ if(channels){
     let channel = channels[y]
     if(channel.channelId != 2 && channel.channelId != 9 && channel.channelId != 11 && channel.channelId != 19){
       channels.splice(y, 1)
+      continue
     }
   }
 }
