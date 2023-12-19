@@ -2,7 +2,7 @@ var body = JSON.parse($response.body);
 var result = body.result;
 var data = result.data;
 
-# 帖子主题黑名单
+# 主题帖黑名单
 const subjectExp = /董宇辉|南方.*北方.*冷|华为/;
 
 # 子版块黑名单
