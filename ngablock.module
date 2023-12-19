@@ -1,6 +1,6 @@
 #!url=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.module
 #!name = NGA屏蔽插件
-#!desc = 自用NGA屏蔽插件
+#!desc = 自用NGA屏蔽插件，需开启https解密
 #!author = 蛋蛋の超人
 
 [URL Rewrite]
@@ -11,11 +11,11 @@
 
 [Script]
 
-# 在线脚本，不可自行维护屏蔽关键字
-#NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js
+# 在线脚本https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js，屏蔽关键字不可修改
+NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js
 
-# 本地脚本（小火箭 → 配置 → 配置文件ⓘ → 脚本 → 右上角+ → 脚本路径ⓘ → 右上角+ → 脚本名称 → 粘贴代码 → 保存），可自行维护屏蔽关键字
-NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=ngablock.js
+# 本地脚本（小火箭 → 配置 → 配置文件ⓘ → 脚本 → 右上角+ → 脚本路径ⓘ → 右上角+ → 脚本名称ngablock.js → 粘贴在线脚本代码 → 保存），可在本地自行维护屏蔽关键字
+#NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=ngablock.js
 
 [MITM]
 hostname = %APPEND% ngabbs.com
