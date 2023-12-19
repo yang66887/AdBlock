@@ -6,7 +6,7 @@ var data = result.data;
 const subjectRegex = /董宇辉|南方.*北方.*冷|华为/;
 
 // 楼层内容关键字
-//const contentRegex = /xxxxxxx/;
+const contentRegex = /xxxx示例关键字XXXX/;
 
 // 子版块
 const forumnameRegex = /二手交易|NGATOYS|优惠信息.*|影音讨论区|小窗视界|青玉巫婆|游戏综合|生命之杯|汽车俱乐部|篮球|萌萌宠物|狼人杀|娱乐吃瓜|晴风村|桌游讨论|剧本杀|永歌森林|国际新闻|视频与主播|鹅鸭杀/;
@@ -49,10 +49,10 @@ if(body.tsubject){
       continue
     }
     // 屏蔽包含特定关键字的楼层
-    //if(content.match(contentRegex)){
-    //  result.splice(y, 1)
-    //  continue
-    //}
+    if(content.match(contentRegex)){
+      result.splice(y, 1)
+      continue
+    }
   }
 }
 
