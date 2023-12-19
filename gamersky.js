@@ -5,7 +5,7 @@ var channels = body.channels
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-    if(temp.type == "huanDeng" || temp.type != "hengFu"){
+    if(temp.type == "huanDeng" || temp.type == "hengFu"){
       listElements.splice(i, 1)
       continue
     }
