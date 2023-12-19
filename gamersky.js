@@ -5,23 +5,7 @@ var channels = body.channels
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-    if(temp.type == "huanDeng"){
-      listElements.splice(i, 1)
-      continue
-    }
-    if(temp.type == "hengFu"){
-      listElements.splice(i, 1)
-      continue
-    }
-    if(temp.type == "zhuanTi_TuiJian_hengXiangGunDong"){
-      listElements.splice(i, 1)
-      continue
-    }
-    if(temp.adId != "0" && type != "pingLun"){
-      listElements.splice(i, 1)
-      continue
-    }
-    if(temp.title == "EPIC游戏商城假日特卖"){
+    if(temp.adId != "0" && type != "pingLun" && type != "xinWen"){
       listElements.splice(i, 1)
       continue
     }
