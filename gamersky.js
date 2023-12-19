@@ -5,7 +5,7 @@ var channels = body.channels
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-    if(temp.adId != "0" && type != "pingLun" && type != "xinWen"){
+    if(temp.type != "pingLun" && temp.type != "xinWen"){
       listElements.splice(i, 1)
       continue
     }
