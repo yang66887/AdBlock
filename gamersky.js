@@ -11,6 +11,9 @@ if(listElements){
     if(temp.type == "hengFu"){
       listElements.splice(i, 1)
     }
+    if(temp.type == "zhuanTi_TuiJian_hengXiangGunDong"){
+      listElements.splice(i, 1)
+    }
     if(temp.adId != "0" && type != "pingLun"){
       listElements.splice(i, 1)
     }
