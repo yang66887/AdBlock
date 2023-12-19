@@ -10,7 +10,7 @@
 ^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
 
 [Script]
-
+# 关键字过滤+黑名单主题帖、楼层屏蔽
 # 在线脚本https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js，屏蔽关键字不可修改
 NGA屏蔽插件=type=http-response,pattern=^https?:\/\/ngabbs\.com\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js
 
