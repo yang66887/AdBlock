@@ -1,5 +1,5 @@
 var body = JSON.parse($response.body);
-var result = body.result
+var result = body.result;
 var data = result.data;
 const subjectExp = /董宇辉|南方.*北方.*冷|华为/;
 const forumnameExp = /二手交易|NGATOYS|优惠信息.*|影音讨论区|小窗视界|青玉巫婆|游戏综合|生命之杯|汽车俱乐部|篮球|萌萌宠物|狼人杀|娱乐吃瓜|晴风村|桌游讨论|剧本杀|永歌森林|国际新闻|视频与主播|鹅鸭杀/;
@@ -25,7 +25,7 @@ if(data){
   }
 }
 
-if(result.tsubject){
+if(body.tsubject){
   for(let y = result.length - 1; y >= 0; y--){
     let username = result[y].author.username
     if(username.match(authorExp)){
