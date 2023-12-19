@@ -2,7 +2,7 @@ var body = JSON.parse($response.body);
 var listElements = body.listElements;
 var channels = body.channels;
 
-//新闻+游戏库
+//新闻
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
