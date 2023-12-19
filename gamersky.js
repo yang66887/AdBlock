@@ -5,10 +5,10 @@ var channels = body.channels
 if(listElements){
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-    if(!temp.adId){
+    if(!temp.adId && type != "pingLun"){
       listElements.splice(i, 1)
     }
-    if(temp.adId != "0"){
+    if(temp.adId != "0" && type != "pingLun"){
       listElements.splice(i, 1)
     }
     if(temp.title == "EPIC游戏商城假日特卖"){
