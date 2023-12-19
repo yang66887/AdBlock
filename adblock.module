@@ -32,10 +32,6 @@ DOMAIN-SUFFIX,snssdk.com,Reject
 DOMAIN-SUFFIX,yangkeduo.com,Reject
 
 [URL Rewrite]
-# 山丘阅读会员解锁
-#^https?:\/\/m\.815616\.xyz\/(api\/v2\/istoken.*uid=)7aa16c9a8(.*)$ http://m.815616.xyz/$1c55s1d4c7$2 302
-#^https?:\/\/m\.815616\.xyz\/api\/v2\/saveiaporder.*$ - Direct
-#^https?:\/\/m\.815616\.xyz https://tv.superegg.buzz header
 
 # 游民星空
 ^https?:\/\/appapi\d?click\.gamersky\.com.*$ - Reject
@@ -47,8 +43,7 @@ DOMAIN-SUFFIX,yangkeduo.com,Reject
 ^https?:\/\/item-statistics\.gamersky\.com:8089\/statistics\/event.*$ - Reject
 
 [Script]
-gamersky1=type=http-response,pattern=^https?:\/\/router\d?\.gamersky\.com\/@\/lists\/getListElements,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
-gamersky2=type=http-response,pattern=^https?:\/\/router\d?\.gamersky\.com\/@\/homePage\/index,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
+游民星空去广告=type=http-response,pattern=^https?:\/\/router\d?\.gamersky\.com\/@\/(lists\/getListElements|homePage\/index),requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.zijieapi.com,*.xd.cn*.kuaishou.com,*.snssdk.com
