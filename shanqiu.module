@@ -1,6 +1,6 @@
 #!url=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.module
-#!name = 山丘阅读
-#!desc = 山丘阅读IOS端终身会员解锁
+#!name = 山丘阅读终身会员解锁（伪）
+#!desc = 可去除开屏广告，会员功能无法使用
 #!author = 蛋蛋の超人
 
 [Script]
