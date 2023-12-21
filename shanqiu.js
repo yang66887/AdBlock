@@ -13,6 +13,10 @@ for(let i in requestParams){
   params[paramKey] = paramValue
 }
 
+//普通会员：1-7，无法绑定Apple ID
+//年费会员：8
+//终身会员：9
+//普通会员：10+，可绑定Apple ID
 temp.type = "9"
 temp.vipto = "9999-12-31 23:59:59"
 temp.email = "for_example@gmail.com"
