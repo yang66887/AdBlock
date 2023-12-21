@@ -49,5 +49,5 @@ if(requestUrl.match(scanApi)){
   var body = $request.body
   var cid = body.split('&')[1].split('=')[1]
   body = "fromuid=7aa16c9b8&cid=" + cid
-  $done({body: body});
+  $done({body: console.log(body)});
 }
