@@ -18,7 +18,7 @@ for(let i in requestParams){
 //终身会员：9
 //普通会员：10+，可绑定Apple ID
 temp.type = "9"
-//temp.vipto = "2099-01-01 00:00:00"
+temp.vipto = "2099-01-01 00:00:00"
 temp.email = "for_example@gmail.com"
 temp.appleid = "for_example@gmail.com"
 temp.token = params.token
