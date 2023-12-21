@@ -14,7 +14,6 @@ for(let i in requestParams){
 }
 
 temp.type = "999"
-temp.viptype = "0"
 temp.vipto = "9999-12-31 23:59:59"
 temp.email = "for_example@gmail.com"
 temp.appleid = "for_example.gmail.com"
@@ -25,7 +24,7 @@ temp.uuid = params.uid
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
   body.status = "1"
   body.data = "登录成功"
-  body.viptype = "999"
+  body.type = "999"
   body.token = params.token
   body.email = temp.email
   body.appleid = temp.appleid
