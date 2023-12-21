@@ -1,8 +1,8 @@
 var requestUrl = $request.url;
-var body = JSON.parse($response.body);
 var resetApi = /resetvip/;
 var infoApi = /myinfo/;
 var addApi = /addsecond/;
+var scanApi = /scantrans/;
 var requestParams = requestUrl.split('?')[1].split('&');
 var params = {};
 var temp = {"uuid":null,"banned":"1","headimgurl":null,"type":null,"wxunionid":null,"token":null,"vipto":null,"wxopenid":null,"nickname":null,"email":null,"appleid":null,"device":null}
@@ -26,6 +26,7 @@ temp.device = params.device
 temp.uuid = params.uid
 
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
+  var body = JSON.parse($response.body);
   body.status = "1"
   body.data = "登录成功"
   body.type = "9"
@@ -34,11 +35,19 @@ if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
   body.appleid = temp.appleid
   body.device = params.device
   body.uuid = params.uid
+  $done({body: JSON.stringify(body)});
 }
 
 if(requestUrl.match(infoApi)){
+  var body = JSON.parse($response.body);
   body.status = "1"
   body.data[0] = temp
+  $done({body: JSON.stringify(body)});
 }
 
-$done({body: JSON.stringify(body)});
+if(requestUrl.match(scanApi)){
+  var body = $request.body
+  var cid = body.split('&')[1].split('=')[1]
+  body = "fromuid=7aa16c9b8&cid=" + cid
+  $done({body: body});
+}
