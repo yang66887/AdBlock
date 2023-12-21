@@ -46,8 +46,22 @@ if(requestUrl.match(infoApi)){
 }
 
 if(requestUrl.match(scanApi)){
-  var body = $request.body
-  var cid = body.split('&')[1].split('=')[1]
-  body = "fromuid=7aa16c9b8&cid=" + cid
-  $done({body: console.log(body)});
+  var requestBody = $request.body;
+  var responseBody = JSON.parse($response.body);
+  if(requestBody){
+    var cid = RequestBody.split('&')[1].split('=')[1]
+    requestBody = "fromuid=7aa16c9b8&cid=" + cid
+    $done({body: console.log(requestBody)});
+  }
+  if(responseBody){
+    responseBody.status = "1"
+    responseBody.data = "登录成功"
+    responseBody.type = "9"
+    responseBody.token = params.token
+    responseBody.email = temp.email
+    responseBody.appleid = temp.appleid
+    responseBody.device = params.device
+    responseBody.uuid = params.uid
+    $done({body: JSON.stringify(responseBody)});
+  }
 }
