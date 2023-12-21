@@ -28,7 +28,7 @@ temp.uuid = params.uid
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
   body.status = "1"
   body.data = "登录成功"
-  body.type = "999"
+  body.type = "9"
   body.token = params.token
   body.email = temp.email
   body.appleid = temp.appleid
