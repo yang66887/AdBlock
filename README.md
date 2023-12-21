@@ -4,4 +4,4 @@
 
 - ngablock.module: NGA流量清洗
 
-- shanqiu.module: 山丘阅读终身会员解锁
+- shanqiu.module: 山丘阅读终身会员解锁（伪）
