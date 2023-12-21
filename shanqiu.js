@@ -13,7 +13,7 @@ for(let i in requestParams){
   params[paramKey] = paramValue
 }
 
-//普通会员：1-7，无法绑定Apple ID
+//普通会员：0-7，无法绑定Apple ID
 //年费会员：8
 //终身会员：9
 //普通会员：10+，可绑定Apple ID
