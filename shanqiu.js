@@ -13,7 +13,7 @@ for(let i in requestParams){
   params[paramKey] = paramValue
 }
 
-temp.type = "999"
+temp.type = "9"
 temp.vipto = "9999-12-31 23:59:59"
 temp.email = "for_example@gmail.com"
 temp.appleid = "for_example@gmail.com"
