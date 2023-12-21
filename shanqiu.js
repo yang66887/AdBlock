@@ -5,7 +5,7 @@ var infoApi = /myinfo/;
 var addApi = /addsecond/;
 var requestParams = requestUrl.split('?')[1].split('&');
 var params = {};
-var temp = {"uuid":null,"banned":"0","headimgurl":null,"type":null,"wxunionid":null,"token":null,"vipto":null,"wxopenid":null,"nickname":null,"email":null,"appleid":null,"device":null}
+var temp = {"uuid":null,"banned":"1","headimgurl":null,"type":null,"wxunionid":null,"token":null,"vipto":null,"wxopenid":null,"nickname":null,"email":null,"appleid":null,"device":null}
 
 for(let i in requestParams){
   let paramKey = requestParams[i].split('=')[0]
