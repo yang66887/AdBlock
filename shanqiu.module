@@ -1,0 +1,10 @@
+#!url=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.module
+#!name = 山丘阅读
+#!desc = 伪绑定 Apple ID + 去开屏广告
+#!author = 蛋蛋の超人
+
+[Script]
+山丘阅读=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/(resetvip|myinfo|addsecond)\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
+
+[MITM]
+hostname = %APPEND% *.815616.xyz
