@@ -16,7 +16,7 @@ for(let i in requestParams){
 temp.type = "999"
 temp.vipto = "9999-12-31 23:59:59"
 temp.email = "for_example@gmail.com"
-temp.appleid = "for_example.gmail.com"
+temp.appleid = "for_example@gmail.com"
 temp.token = params.token
 temp.device = params.device
 temp.uuid = params.uid
