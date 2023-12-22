@@ -21,6 +21,19 @@ DOMAIN-SUFFIX,xd.cn,Reject
 DOMAIN-SUFFIX,tagtic.cn,Reject
 DOMAIN-SUFFIX,e.kuaishou.com,Reject
 DOMAIN-SUFFIX,yangkeduo.com,Reject
+DOMAIN-SUFFIX,zijieapi.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject-200
+DOMAIN-SUFFIX,volces.com,reject-200
+DOMAIN-SUFFIX,snssdk.com,reject-200
+DOMAIN-SUFFIX,ctobsnssdk.com,reject-200
+DOMAIN-SUFFIX,pglstatp-toutiao.com,reject-200
+DOMAIN-SUFFIX,chengzijianzhan.com,reject-200
+DOMAIN-SUFFIX,oceanengine.com,reject-200
+DOMAIN-SUFFIX,bytetos.com,reject-200
+DOMAIN-SUFFIX,bytescm.com,reject-200
+DOMAIN-SUFFIX,byteurl.com,reject-200
 
 [URL Rewrite]
 # 游民星空
