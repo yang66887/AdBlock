@@ -6,7 +6,7 @@ var requestParams = requestUrl.split('?')[1].split('&');
 var resetApi = /resetvip/;
 var infoApi = /myinfo/;
 var addApi = /addsecond/;
-var configApi = /config\d+/;
+var configApi = /config2020/;
 //格式化请求uri参数
 var params = {};
 for(let i in requestParams){
@@ -41,15 +41,16 @@ if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
 }
 
 if(requestUrl.match(configApi)){
-  var keyRegex = /ONLINE_REWARDAD_CONFIG_V558|ONLINE_INTERAD_DOWNLOAD_CONFIG_V558|ONLINE_ENABLE_REWARDAD_V558|ONLINE_SHOWFULLFUNC_V558|PARAV2_SPLASHADS_CONFIG|ONLINE_IAP_VERSION/
+  //var keyRegex = /ONLINE_REWARDAD_CONFIG_V558|ONLINE_INTERAD_DOWNLOAD_CONFIG_V558|ONLINE_ENABLE_REWARDAD_V558|ONLINE_SHOWFULLFUNC_V558|PARAV2_SPLASHADS_CONFIG|ONLINE_IAP_VERSION/
   let data = body.data
-  for(let i = data.length - 1; i >= 0; i--){
-    let cokey = data[i].cokey
-    if(!cokey.match(keyRegex)){
-      data.splice(i, 1)
-      continue
-    }
-  }
+  //for(let i = data.length - 1; i >= 0; i--){
+  //  let cokey = data[i].cokey
+  //  if(!cokey.match(keyRegex)){
+  //    data.splice(i, 1)
+  //    continue
+  //  }
+  //}
+  data = {}
 }
 
 $done({body: JSON.stringify(body)})
