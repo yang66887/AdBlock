@@ -1,6 +1,6 @@
 #!url=https://raw.githubusercontent.com/yang66887/AdBlock/main/adblock.module
 #!name = 去牛皮藓
-#!desc = 自用去各类App顽固三方广告以及自定义版面广告
+#!desc = 自用去除各类顽固三方广告以及App版面广告
 #!author = 蛋蛋の超人
 
 [Rule]
