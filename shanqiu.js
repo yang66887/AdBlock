@@ -25,13 +25,6 @@ temp.token = params.token
 temp.device = params.device
 temp.uuid = params.uid
 
-if(!requestUrl.match(domainRegex)){
-  var tempResult = {"magic_tag":"ss_app_log","message":"success","server_time":null}
-  var timestamp = Date.parse(new Date()).toString().slice(0, 10)
-  tempResult.server_time = timestamp
-  body = tempResult
-}
-
 if(requestUrl.match(infoApi)){
   body.status = "1"
   body.data[0] = temp
