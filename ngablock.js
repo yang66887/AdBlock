@@ -3,7 +3,7 @@ var result = body.result;
 var data = result.data;
 
 // 主题帖名
-const subjectRegex = /女.*觉醒|厌女|小仙女|小红书|彩礼|xxn|XXN|ghg|xhs|董宇辉|南方.*北方.*冷|华为/;
+const subjectRegex = /女.*觉醒|厌女|小仙女|小红书|彩礼|xxn|XXN|ghg|xhs|董宇辉|南.*北?.*冷|华为/;
 
 // 楼层内容关键字
 const contentRegex = /xxxx示例关键字XXXX/;
