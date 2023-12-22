@@ -3,13 +3,27 @@
 #!desc = 可去除开屏5秒倒计时，会员功能无法使用
 #!author = 蛋蛋の超人
 
+[Rule]
+DOMAIN-SUFFIX,zijieapi.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject-200
+DOMAIN-SUFFIX,volces.com,reject-200
+DOMAIN-SUFFIX,snssdk.com,reject-200
+DOMAIN-SUFFIX,ctobsnssdk.com,reject-200
+DOMAIN-SUFFIX,pglstatp-toutiao.com,reject-200
+DOMAIN-SUFFIX,chengzijianzhan.com,reject-200
+DOMAIN-SUFFIX,oceanengine.com,reject-200
+DOMAIN-SUFFIX,bytetos.com,reject-200
+DOMAIN-SUFFIX,bytescm.com,reject-200
+DOMAIN-SUFFIX,byteurl.com,reject-200
+
 [URL Rewrite]
 #^(https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8.*)&v=558$ $1&v=999 302
 
 [Script]
 山丘阅读INFO=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/(resetvip|myinfo|addsecond)\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
 山丘阅读CONFIG=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
-山丘阅读ADS=type=http-response,pattern=^https?:\/\/(.*\.zijieapi\.com|*.pangolin-sdk-toutiao-b\.com|.*\.pangolin-sdk-toutiao1\.com|.*\.pangolin-sdk-toutiao\.com|.*\.volces\.com|.*\.snssdk\.com|.*\.ctobsnssdk\.com|.*\.pglstatp-toutiao\.com|.*\.chengzijianzhan\.com|.*\.oceanengine\.com|.*\.bytetos\.com|.*\.bytescm\.com|.*\.byteurl\.com)/,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
 
 [MITM]
-hostname = %APPEND% *.815616.xyz,*.zijieapi.com,*.pangolin-sdk-toutiao-b.com,*.pangolin-sdk-toutiao1.com,*.pangolin-sdk-toutiao.com,*.volces.com,*.snssdk.com,*.ctobsnssdk.com,*.pglstatp-toutiao.com,*.chengzijianzhan.com,*.oceanengine.com,*.bytetos.com,*.bytescm.com,*.byteurl.com
+hostname = %APPEND% *.815616.xyz
