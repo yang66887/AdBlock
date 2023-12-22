@@ -9,7 +9,7 @@
 [Script]
 山丘阅读INFO=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/(resetvip|myinfo|addsecond)\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
 山丘阅读CONFIG=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
-山丘阅读ADS=type=http-response,pattern=^https?:\/\/(.*\.zijieapi\.com|*.pangolin-sdk-toutiao-b.com|.*\.pangolin-sdk-toutiao1.com|.*\.pangolin-sdk-toutiao.com|.*\.volces.com|.*\.snssdk.com|.*\.ctobsnssdk.com|.*\.pglstatp-toutiao.com|.*\.chengzijianzhan.com|.*\.oceanengine.com|.*\.bytetos.com|.*\.bytescm.com|.*\.byteurl.com)/,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
+山丘阅读ADS=type=http-response,pattern=^https?:\/\/(.*\.zijieapi\.com|*.pangolin-sdk-toutiao-b\.com|.*\.pangolin-sdk-toutiao1\.com|.*\.pangolin-sdk-toutiao\.com|.*\.volces\.com|.*\.snssdk\.com|.*\.ctobsnssdk\.com|.*\.pglstatp-toutiao\.com|.*\.chengzijianzhan\.com|.*\.oceanengine\.com|.*\.bytetos\.com|.*\.bytescm\.com|.*\.byteurl\.com)/,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
 
 [MITM]
 hostname = %APPEND% *.815616.xyz,*.zijieapi.com,*.pangolin-sdk-toutiao-b.com,*.pangolin-sdk-toutiao1.com,*.pangolin-sdk-toutiao.com,*.volces.com,*.snssdk.com,*.ctobsnssdk.com,*.pglstatp-toutiao.com,*.chengzijianzhan.com,*.oceanengine.com,*.bytetos.com,*.bytescm.com,*.byteurl.com
