@@ -3,21 +3,6 @@
 #!desc = 可去除开屏5秒倒计时，会员功能无法使用
 #!author = 蛋蛋の超人
 
-[Rule]
-DOMAIN-SUFFIX,zijieapi.com,reject-200
-DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
-DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,reject-200
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject-200
-DOMAIN-SUFFIX,volces.com,reject-200
-DOMAIN-SUFFIX,snssdk.com,reject-200
-DOMAIN-SUFFIX,ctobsnssdk.com,reject-200
-DOMAIN-SUFFIX,pglstatp-toutiao.com,reject-200
-DOMAIN-SUFFIX,chengzijianzhan.com,reject-200
-DOMAIN-SUFFIX,oceanengine.com,reject-200
-DOMAIN-SUFFIX,bytetos.com,reject-200
-DOMAIN-SUFFIX,bytescm.com,reject-200
-DOMAIN-SUFFIX,byteurl.com,reject-200
-
 [URL Rewrite]
 #^(https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8.*)&v=558$ $1&v=999 302
 
