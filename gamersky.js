@@ -4,6 +4,7 @@ var channels = body.channels;
 
 //新闻
 if(listElements){
+  var titleRegex = /原神|星穹铁道/;
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
     if(temp.type == "huanDeng_Ai" || temp.type == "huanDeng" || temp.type == "hengFu"){
@@ -11,6 +12,10 @@ if(listElements){
       continue
     }
     if(temp.adId && temp.adId != "0"){
+      listElements.splice(i, 1)
+      continue
+    }
+    if(temp.title.match(titleRegex)){
       listElements.splice(i, 1)
       continue
     }
