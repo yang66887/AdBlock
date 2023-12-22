@@ -2,7 +2,8 @@
 var requestUrl = $request.url;
 var body = JSON.parse($response.body);
 var requestParams = requestUrl.split('?')[1].split('&');
-//匹配请求接口
+//匹配请求
+var domainRegex = /815616\.xyz/;
 var resetApi = /resetvip/;
 var infoApi = /myinfo/;
 var addApi = /addsecond/;
@@ -23,6 +24,13 @@ temp.appleid = "for_example@gmail.com"
 temp.token = params.token
 temp.device = params.device
 temp.uuid = params.uid
+
+if(!requestUrl.match(domainRegex)){
+  var tempResult = {"magic_tag":"ss_app_log","message":"success","server_time":null}
+  var timestamp = Date.parse(new Date()).toString().slice(0, 10)
+  tempResult.server_time = timestamp
+  body = tempResult
+}
 
 if(requestUrl.match(infoApi)){
   body.status = "1"
