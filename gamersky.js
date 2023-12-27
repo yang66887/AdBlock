@@ -11,11 +11,11 @@ if(listElements){
       listElements.splice(i, 1)
       continue
     }
-    if(temp.adId && temp.adId != "0"){
+    if(temp.title.match(titleRegex)){
       listElements.splice(i, 1)
       continue
     }
-    if(temp.title.match(titleRegex)){
+    if(temp.adId && temp.adId != "0"){
       listElements.splice(i, 1)
       continue
     }
