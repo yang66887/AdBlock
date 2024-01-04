@@ -9,7 +9,7 @@
 [Script]
 山丘阅读INFO=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/(resetvip|myinfo|addsecond)\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
 山丘阅读CONFIG=type=http-response,pattern=^https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
-读不舍手=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/reader.js
+读不舍手=type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/reader.js
 
 [MITM]
 hostname = %APPEND% *.815616.xyz *.revenuecat.com
