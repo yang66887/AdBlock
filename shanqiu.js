@@ -22,7 +22,7 @@ temp.vipto = "2099-01-01 00:00:00"
 temp.email = "9527"
 temp.appleid = "9527"
 temp.wxopenid = "9527"
-temp.nickname = "咸蛋超人"
+temp.nickname = "南通男同男童"
 temp.token = params.token
 temp.device = params.device
 temp.uuid = params.uid
@@ -45,16 +45,16 @@ if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
 }
 
 if(requestUrl.match(configApi)){
-  //var keyRegex = /ONLINE_REWARDAD_CONFIG_V558|ONLINE_INTERAD_DOWNLOAD_CONFIG_V558|ONLINE_ENABLE_REWARDAD_V558|ONLINE_SHOWFULLFUNC_V558|PARAV2_SPLASHADS_CONFIG|ONLINE_IAP_VERSION/
+  var keyRegex = /ONLINE_REWARDAD_CONFIG|ONLINE_INTERAD_DOWNLOAD|ONLINE_ENABLE_REWARDAD|ONLINE_SHOWFULLFUNC|PARAV2_SPLASHADS_CONFIG|ONLINE_IAP_VERSION/
   var data = body.data
-  //for(let i = data.length - 1; i >= 0; i--){
-  //  let cokey = data[i].cokey
-  //  if(!cokey.match(keyRegex)){
-  //    data.splice(i, 1)
-  //    continue
-  //  }
-  //}
-  data = {}
+  for(let i = data.length - 1; i >= 0; i--){
+    let cokey = data[i].cokey
+    if(!cokey.match(keyRegex)){
+      data.splice(i, 1)
+      continue
+    }
+  }
+  //data.length = 0
 }
 
 $done({body: JSON.stringify(body)})
