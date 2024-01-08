@@ -33,8 +33,8 @@ if(requestUrl.match(infoApi)){
 }
 
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
-  body.status = "1"
-  body.data = "登录成功"
+  body.status = "3"
+  //body.data = "登录成功"
   body.type = temp.type
   body.token = params.token
   body.email = temp.email
