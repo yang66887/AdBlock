@@ -33,7 +33,7 @@ if(requestUrl.match(infoApi)){
 }
 
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
-  body.status = "3"
+  body.status = "9"
   //body.data = "登录成功"
   body.type = temp.type
   body.token = params.token
