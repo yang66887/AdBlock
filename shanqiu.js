@@ -84,7 +84,7 @@ if(requestUrl.match(configApi)){
   var cokey_13 = /ONLINE_WANGPAN_SEARCHSITE_URL/
   var covalue_13 = "https://www.jiumodiary.com/"
 
-  var cokey_14 = "ONLINE_WEB_SEARCHSITE_URL",
+  var cokey_14 = /ONLINE_WEB_SEARCHSITE_URL/
   var covalue_14 = "https://www.google.com/search?q=%@"
 
   var cokey_15 = /ONLINE_NEW_REQUESTINFO_FORURL/
