@@ -45,12 +45,116 @@ if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
 }
 
 if(requestUrl.match(configApi)){
-  var keyRegex = /ONLINE_REWARDAD_CONFIG|ONLINE_INTERAD_DOWNLOAD|ONLINE_ENABLE_REWARDAD|ONLINE_SHOWFULLFUNC|PARAV2_SPLASHADS_CONFIG|ONLINE_IAP_VERSION/
+  var cokey_1 = /ONLINE_REWARDAD_CONFIG/
+  var covalue_1 = "0"
+
+  var cokey_2 = /ONLINE_INTERAD_DOWNLOAD_CONFIG/
+  var covalue_2 = "0"
+
+  var cokey_3 = /ONLINE_ENABLE_REWARDAD/
+  var covalue_3 = "disable"
+
+  var cokey_4 = /ONLINE_WEBSEARCHSITE_URL/
+  var covalue_4 = "https://www.google.com/ncr"
+
+  var cokey_5 = /ONLINE_TXTSITES/
+  var covalue_5 = "演示样例"
+
+  var cokey_6 = /ONLINE_WANGPANSEARCHSITE_URL/
+  var covalue_6 = "https://www.jiumodiary.com/"
+
+  var cokey_7 = /ONLINE_SHOWFULLFUNC/
+  var covalue_7 = "0"
+
+  var cokey_8 = /ONLINE_MY_SPECIAL_SITES/
+  var covalue_8 = "留言反馈||vip/upgrade.php?iinnffoo"
+
+  var cokey_9 = /ONLINE_SAVECOVERSITESV2/
+  var covalue = "0"
+
+  var cokey_10 = /ONLINE_ADWORDS/
+  var covalue_10 = "0"
+
+  var cokey_11 = /PARAV2_SPLASHADS_CONFIG/
+  var covalue_11 = "0"
+
+  var cokey_12 = /ONLINE_JS_RULES/
+  var covalue_12 = ""
+
+  var cokey_13 = /ONLINE_WANGPAN_SEARCHSITE_URL/
+  var covalue_13 = "https://www.jiumodiary.com/"
+
+  var cokey_14 = "ONLINE_WEB_SEARCHSITE_URL",
+  var covalue_14 = "https://www.google.com/search?q=%@"
+
+  var cokey_15 = /ONLINE_NEW_REQUESTINFO_FORURL/
+  var covalue_15 = "0"
+
+  var cokey_16 = /ONLINE_ADAWAY_STRING/
+  var covalue_16 = []
+
+  var cokey_17 = /ONLINE_TXTNOVEL_CHECKIN_URL/
+  var covalue_17 = "http://www.txtnovel.vip/plugin.php?id=dsu_paulsign:sign&mobile=yes"
+
+  var cokey_18 = /ONLINE_IAP_VERSION/
+  var covalue_18 = "230510"
+
+  var cokey_19 = /ONLINE_TXTNOVEL_URL/
+  var covalue_19 = "http://www.txtnovel.vip"
+  
   var data = body.data
   for(let i = data.length - 1; i >= 0; i--){
     let cokey = data[i].cokey
-    if(!cokey.match(keyRegex)){
-      data.splice(i, 1)
+    if(cokey.match(cokey_1)){
+      data[i].covalue = covalue_1
+      continue
+    }
+    if(cokey.match(cokey_2)){
+      data[i].covalue = covalue_2
+      continue
+    }
+    if(cokey.match(cokey_3)){
+      data[i].covalue = covalue_3
+      continue
+    }
+    if(cokey.match(cokey_4)){
+      data[i].covalue = covalue_4
+      continue
+    }
+    if(cokey.match(cokey_5)){
+      data[i].covalue = covalue_5
+      continue
+    }
+    if(cokey.match(cokey_7)){
+      data[i].covalue = covalue_7
+      continue
+    }
+    if(cokey.match(cokey_9)){
+      data[i].covalue = covalue_9
+      continue
+    }
+    if(cokey.match(cokey_10)){
+      data[i].covalue = covalue_10
+      continue
+    }
+    if(cokey.match(cokey_11)){
+      data[i].covalue = covalue_11
+      continue
+    }
+    if(cokey.match(cokey_12)){
+      data[i].covalue = covalue_12
+      continue
+    }
+    if(cokey.match(cokey_14)){
+      data[i].covalue = covalue_14
+      continue
+    }
+    if(cokey.match(cokey_15)){
+      data[i].covalue = covalue_15
+      continue
+    }
+    if(cokey.match(cokey_16)){
+      data[i].covalue = covalue_16
       continue
     }
   }
