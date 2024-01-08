@@ -33,7 +33,7 @@ if(requestUrl.match(infoApi)){
 }
 
 if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
-  body.status = "9"
+  body.status = "3"
   //body.data = "登录成功"
   body.type = temp.type
   body.token = params.token
@@ -70,7 +70,7 @@ if(requestUrl.match(configApi)){
   var covalue_8 = "留言反馈||vip/upgrade.php?iinnffoo"
 
   var cokey_9 = /ONLINE_SAVECOVERSITESV2/
-  var covalue = "0"
+  var covalue_9 = "0"
 
   var cokey_10 = /ONLINE_ADWORDS/
   var covalue_10 = "0"
