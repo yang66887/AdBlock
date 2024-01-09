@@ -21,7 +21,7 @@ headers['Connection'] = 'keep-alive'
 headers['Accept'] = '*/*'
 headers['Content-Type'] = 'application/json'
 headers['X-Is-Sandbox'] = 'true'
-headers['X-StoreKit2-Enabled'] = 'true'
+headers['X-StoreKit2-Enabled'] = 'false'
 headers['Accept-Encoding'] = 'gzip, deflate, br'
 
 $done({headers})
