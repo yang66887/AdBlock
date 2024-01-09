@@ -28,8 +28,8 @@ temp.uuid = params.uid
 
 if(requestUrl.match(infoApi)){
   body.status = "1"
-  temp.type = "8" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
-  temp.vipto = "2024-12-31 00:00:00"
+  temp.type = "9" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
+  temp.vipto = "2099-12-31 00:00:00"
   body.data[0] = temp
 }
 
