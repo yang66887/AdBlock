@@ -17,8 +17,6 @@ for(let i in requestParams){
 }
 //预设vip数据
 var temp = {"uuid":null,"banned":"0","headimgurl":null,"type":null,"wxunionid":null,"token":null,"vipto":null,"wxopenid":null,"nickname":null,"email":null,"appleid":null,"device":null}
-temp.type = "9" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
-temp.vipto = "2099-01-01 00:00:00"
 temp.email = "9527"
 temp.appleid = "9527"
 temp.wxopenid = "9527"
@@ -29,19 +27,19 @@ temp.uuid = params.uid
 
 if(requestUrl.match(infoApi)){
   body.status = "1"
+  temp.type = "8" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
+  temp.vipto = "2024-12-31 00:00:00"
   body.data[0] = temp
 }
 
-if(requestUrl.match(resetApi) || requestUrl.match(addApi)){
-  body.status = "3"
-  //body.data = "登录成功"
-  body.type = temp.type
-  body.token = params.token
-  body.email = temp.email
-  body.appleid = temp.appleid
-  body.nickname = temp.nickname
-  body.device = params.device
-  body.uuid = params.uid
+//if(requestUrl.match(resetApi)
+
+if(requestUrl.match(addApi)){
+  body.status = "1"
+  body.data = []
+  temp.type = "9" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
+  temp.vipto = "2099-01-01 00:00:00"
+  body.data[0] = temp
 }
 
 if(requestUrl.match(configApi)){
