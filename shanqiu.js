@@ -21,7 +21,8 @@ temp.email = "9527"
 temp.appleid = "9527"
 temp.wxopenid = "9527"
 temp.nickname = "南通男同男童"
-temp.token = params.token
+//temp.token = params.token
+temp.token = "99999999"
 temp.device = params.device
 temp.uuid = params.uid
 
