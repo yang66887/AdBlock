@@ -5,7 +5,7 @@
 
 [URL Rewrite]
 #^(https?:\/\/m\.815616\.xyz\/api\/v2\/config2020\/8.*)&v=558$ $1&v=999 302
-^https?:\/\/log-api\.pangolin-sdk-toutiao-b\.com https://tv.superegg.buzz header
+#^https?:\/\/log-api\.pangolin-sdk-toutiao-b\.com https://tv.superegg.buzz header
 
 [Script]
 山丘阅读=type=http-response,pattern=^https?:\/\/(m\.815616\.xyz|108\.181\.40\.58:88)\/api\/v2\/(resetvip|myinfo|addsecond|config2020)\/8,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.js
