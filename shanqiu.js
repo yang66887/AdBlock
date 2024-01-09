@@ -3,7 +3,7 @@ var requestUrl = $request.url;
 var body = JSON.parse($response.body);
 var requestParams = requestUrl.split('?')[1].split('&');
 //匹配请求
-var domain = /815616\.xyz/;
+var domain = /815616\.xyz|108\.181\.40\.58|wdsou\.com/;
 var domainAd = /log-api\.pangolin-sdk-toutiao-b\.com/
 var resetApi = /resetvip/;
 var infoApi = /myinfo/;
