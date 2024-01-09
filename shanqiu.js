@@ -36,10 +36,7 @@ if(requestUrl.match(infoApi)){
 
 if(requestUrl.match(addApi)){
   body.status = "1"
-  body.data = []
-  temp.type = "9" //普通会员：0-7，无法绑定Apple ID | 年费会员：8 | 终身会员：9 | 普通会员：10+，可绑定Apple ID
-  temp.vipto = "2099-01-01 00:00:00"
-  body.data[0] = temp
+  body.data = "绑定成功"
 }
 
 if(requestUrl.match(configApi)){
