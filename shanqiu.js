@@ -20,8 +20,7 @@ temp.email = "9527"
 temp.appleid = "9527"
 temp.wxopenid = "9527"
 temp.nickname = "南通男同男童"
-//temp.token = params.token
-temp.token = "99999999"
+temp.token = params.token
 temp.device = params.device
 temp.uuid = params.uid
 
@@ -39,7 +38,7 @@ if(requestUrl.match(addApi)){
   body.data = "绑定成功"
   }
 
-  if(requestUrl.match(configApi)){
+if(requestUrl.match(configApi)){
   var cokey_1 = /ONLINE_REWARDAD_CONFIG/
   var covalue_1 = "0"
 
