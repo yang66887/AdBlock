@@ -33,6 +33,8 @@ DOMAIN-SUFFIX,oceanengine.com,reject-200
 DOMAIN-SUFFIX,bytetos.com,reject-200
 DOMAIN-SUFFIX,bytescm.com,reject-200
 DOMAIN-SUFFIX,byteurl.com,reject-200
+# youtube
+DOMAIN-SUFFIX,ggpht.com,reject-200
 
 [URL Rewrite]
 # 游民星空
