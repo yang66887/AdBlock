@@ -127,18 +127,18 @@ if(requestUrl.match(configApi)){
       data[i].covalue = covalue_9
       continue
     }
-    if(cokey.match(cokey_10)){
-      data[i].covalue = covalue_10
-      continue
-    }
+    //if(cokey.match(cokey_10)){
+    //  data[i].covalue = covalue_10
+    //  continue
+    //}
     if(cokey.match(cokey_11)){
       data[i].covalue = covalue_11
       continue
     }
-    if(cokey.match(cokey_12)){
-      data[i].covalue = covalue_12
-      continue
-    }
+    //if(cokey.match(cokey_12)){
+    //  data[i].covalue = covalue_12
+    //  continue
+    //}
     if(cokey.match(cokey_14)){
       data[i].covalue = covalue_14
       continue
@@ -147,10 +147,10 @@ if(requestUrl.match(configApi)){
       data[i].covalue = covalue_15
       continue
     }
-    if(cokey.match(cokey_16)){
-      data[i].covalue = covalue_16
-      continue
-    }
+    //if(cokey.match(cokey_16)){
+    //  data[i].covalue = covalue_16
+    //  continue
+    //}
   }
   //data.length = 0
 }
