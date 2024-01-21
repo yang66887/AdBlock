@@ -33,6 +33,9 @@ DOMAIN-SUFFIX,oceanengine.com,reject-200
 DOMAIN-SUFFIX,bytetos.com,reject-200
 DOMAIN-SUFFIX,bytescm.com,reject-200
 DOMAIN-SUFFIX,byteurl.com,reject-200
+DOMAIN-SUFFIX,1rtb.net,reject-200
+DOMAIN-SUFFIX,1rtb.com,reject-200
+DOMAIN-SUFFIX,bytedance.com,reject-200
 # youtube
 #DOMAIN-SUFFIX,ggpht.com,reject-200
 
