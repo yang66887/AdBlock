@@ -97,8 +97,8 @@ if(requestUrl.match(configApi)){
   var covalue_19 = "http://www.txtnovel.vip"
   
   var data = body.data
-  for(let i = data.length - 1; i >= 0; i--){
-    let cokey = data[i].cokey
+  //for(let i = data.length - 1; i >= 0; i--){
+  //  let cokey = data[i].cokey
     //if(cokey.match(cokey_1)){
     //  data[i].covalue = covalue_1
     //  continue
@@ -151,7 +151,7 @@ if(requestUrl.match(configApi)){
     //  data[i].covalue = covalue_16
     //  continue
     //}
-  }
+  //}
   data.length = 0
   data[0] = {"cokey":"ONLINE_WEB_SEARCHSITE_URL","covalue":"https://www.google.com/search?q=%@"}
 }
