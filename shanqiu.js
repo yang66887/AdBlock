@@ -99,60 +99,61 @@ if(requestUrl.match(configApi)){
   var data = body.data
   for(let i = data.length - 1; i >= 0; i--){
     let cokey = data[i].cokey
-    if(cokey.match(cokey_1)){
-      data[i].covalue = covalue_1
-      continue
-    }
-    if(cokey.match(cokey_2)){
-      data[i].covalue = covalue_2
-      continue
-    }
-    if(cokey.match(cokey_3)){
-      data[i].covalue = covalue_3
-      continue
-    }
-    if(cokey.match(cokey_4)){
-      data[i].covalue = covalue_4
-      continue
-    }
-    if(cokey.match(cokey_5)){
-      data[i].covalue = covalue_5
-      continue
-    }
-    if(cokey.match(cokey_7)){
-      data[i].covalue = covalue_7
-      continue
-    }
-    if(cokey.match(cokey_9)){
-      data[i].covalue = covalue_9
-      continue
-    }
+    //if(cokey.match(cokey_1)){
+    //  data[i].covalue = covalue_1
+    //  continue
+    //}
+    //if(cokey.match(cokey_2)){
+    //  data[i].covalue = covalue_2
+    //  continue
+    //}
+    //if(cokey.match(cokey_3)){
+    //  data[i].covalue = covalue_3
+    //  continue
+    //}
+    //if(cokey.match(cokey_4)){
+    //  data[i].covalue = covalue_4
+    //  continue
+    //}
+    //if(cokey.match(cokey_5)){
+    //  data[i].covalue = covalue_5
+    //  continue
+    //}
+    //if(cokey.match(cokey_7)){
+    //  data[i].covalue = covalue_7
+    //  continue
+    //}
+    //if(cokey.match(cokey_9)){
+    //  data[i].covalue = covalue_9
+    //  continue
+    //}
     //if(cokey.match(cokey_10)){
     //  data[i].covalue = covalue_10
     //  continue
     //}
-    if(cokey.match(cokey_11)){
-      data[i].covalue = covalue_11
-      continue
-    }
+    //if(cokey.match(cokey_11)){
+    //  data[i].covalue = covalue_11
+    //  continue
+    //}
     //if(cokey.match(cokey_12)){
     //  data[i].covalue = covalue_12
     //  continue
     //}
-    if(cokey.match(cokey_14)){
-      data[i].covalue = covalue_14
-      continue
-    }
-    if(cokey.match(cokey_15)){
-      data[i].covalue = covalue_15
-      continue
-    }
+    //if(cokey.match(cokey_14)){
+    //  data[i].covalue = covalue_14
+    //  continue
+    //}
+    //if(cokey.match(cokey_15)){
+    //  data[i].covalue = covalue_15
+    //  continue
+    //}
     //if(cokey.match(cokey_16)){
     //  data[i].covalue = covalue_16
     //  continue
     //}
   }
-  //data.length = 0
+  data.length = 0
+  data = [{"cokey": "ONLINE_WEB_SEARCHSITE_URL","covalue": "https://www.google.com/search?q=%@"}]
 }
 
 $done({body: JSON.stringify(body)})
