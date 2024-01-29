@@ -153,7 +153,7 @@ if(requestUrl.match(configApi)){
     //}
   }
   data.length = 0
-  data = [{"cokey": "ONLINE_WEB_SEARCHSITE_URL","covalue": "https://www.google.com/search?q=%@"}]
+  data[0] = {"cokey":"ONLINE_WEB_SEARCHSITE_URL","covalue":"https://www.google.com/search?q=%@"}
 }
 
 $done({body: JSON.stringify(body)})
