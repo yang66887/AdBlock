@@ -7,7 +7,7 @@ if(listElements){
   var titleRegex = /原神|星穹铁道/;
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
-    if(temp.type == "huanDeng_Ai" || temp.type == "huanDeng" || temp.type == "hengFu"){
+    if(temp.type == "huanDeng_Ai" || temp.type == "huanDeng" || temp.type == "hengFu" || temp.type == "sanTu"){
       listElements.splice(i, 1)
       continue
     }
