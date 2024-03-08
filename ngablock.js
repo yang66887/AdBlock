@@ -43,11 +43,11 @@ if(body.tsubject){
   for(let y = result.length - 1; y >= 0; y--){
     let username = result[y].author.username
     let content = result[y].content
-    let voteGood = result[y].vote_good
-    //
-    if(voteGood >= 1){
-      body.result[y].vote_good = 0
-    }
+    //let voteGood = result[y].vote_good
+    //点赞置空
+    //if(voteGood >= 1){
+    //  body.result[y].vote_good = 0
+    //}
     // 屏蔽黑名单用户楼层
     if(username.match(authorRegex)){
       result.splice(y, 1)
@@ -56,6 +56,24 @@ if(body.tsubject){
     // 屏蔽包含特定关键字的楼层
     if(content.match(contentRegex) || content.match(authorRegex)){
       result.splice(y, 1)
+      continue
+    }
+  }
+}
+
+// 热评过滤
+if(body.hot_post && body.hot_post.length >= 1){
+  for(let x = body.hot_post.length - 1; x >= 0; x--){
+    let username = body.hot_post[x].author.username
+    let content = body.hot_post[x].content
+    // 屏蔽黑名单用户楼层
+    if(username.match(authorRegex)){
+      body.hot_post.splice(x, 1)
+      continue
+    }
+    // 屏蔽包含特定关键字的楼层
+    if(content.match(contentRegex) || content.match(authorRegex)){
+      body.hot_post.splice(x, 1)
       continue
     }
   }
