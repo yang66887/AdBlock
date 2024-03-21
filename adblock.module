@@ -38,6 +38,7 @@ DOMAIN-SUFFIX,1rtb.com,reject-200
 DOMAIN-SUFFIX,bytedance.com,reject-200
 DOMAIN-SUFFIX,douyinpic.com,reject-200
 DOMAIN-SUFFIX,ugdtimg.com,reject-200
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
 # youtube
 #DOMAIN-SUFFIX,ggpht.com,reject-200
 
