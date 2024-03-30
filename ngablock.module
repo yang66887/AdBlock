@@ -5,19 +5,20 @@
 
 [URL Rewrite]
 # 域名替换
-^https?:\/\/ngabbs\.com https://bbs.nga.cn header
+#^https?:\/\/ngabbs\.com https://bbs.nga.cn header
+#^https?:\/\/ngabbs\.com https://nga.178.com header
 # 首页banner广告
-^https?:\/\/(ngabbs\.com|bbs\.nga\.cn)\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - REJECT-ARRAY
+^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - REJECT-ARRAY
 # 首页官方推荐
-^https?:\/\/(ngabbs\.com|bbs\.nga\.cn)\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
+^https?:\/\/((ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
 
 [Script]
 # 关键字过滤+黑名单用户主题帖、楼层屏蔽
 # 在线脚本https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js，关键字不可修改
-NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn)\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js
+NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/ngablock.js
 
 # 本地脚本（小火箭 → 配置 → 配置文件ⓘ → 脚本 → 右上角+ → 脚本路径ⓘ → 右上角+ → 脚本名称ngablock.js → 粘贴在线脚本代码 → 保存），可在本地自行维护关键字
-#NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn)\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=ngablock.js
+#NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=ngablock.js
 
 [MITM]
-hostname = %APPEND% ngabbs.com bbs.nga.cn
+hostname = %APPEND% ngabbs.com,bbs.nga.cn,nga.178.com
