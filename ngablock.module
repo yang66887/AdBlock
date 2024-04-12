@@ -11,6 +11,8 @@
 ^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - REJECT-ARRAY
 # 首页官方推荐
 ^https?:\/\/((ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
+# 首页签到活动
+^https?:\/\/ngabbs\.com\/misc\/event\/.*$ - REJECT-ARRAY
 
 [Script]
 # 关键字过滤+黑名单用户主题帖、楼层屏蔽
@@ -21,4 +23,4 @@ NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn
 #NGA流量清洗=type=http-response,pattern=^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/app_api\.php\?__lib=(subject|post)&__act=list,requires-body=1,script-path=ngablock.js
 
 [MITM]
-hostname = %APPEND% ngabbs.com,bbs.nga.cn,nga.178.com
+hostname = %APPEND% ngabbs.com,bbs.nga.cn,.*.178.com
