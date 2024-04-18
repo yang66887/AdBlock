@@ -8,6 +8,10 @@ if(listElements){
   var typeRegex = /huanDeng|hengFu/;
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
+    if(temp.childElements){
+      listElements.splice(i, 1)
+      continue
+    }
     if(temp.type.match(typeRegex)){
       listElements.splice(i, 1)
       continue
