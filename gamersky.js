@@ -4,7 +4,7 @@ var channels = body.channels;
 
 //新闻
 if(listElements){
-  var titleRegex = /赞达亚|原神|星穹铁道/;
+  var titleRegex = /侃爷|赞达亚|原神|星穹铁道/;
   var typeRegex = /huanDeng|hengFu/;
   for (let i = listElements.length - 1; i >= 0; i--) {
     let temp = listElements[i]
