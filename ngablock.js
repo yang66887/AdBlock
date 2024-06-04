@@ -3,10 +3,10 @@ var result = body.result;
 var data = result.data;
 
 // 主题帖名
-const subjectRegex = /鸿蒙|M9|m9|问界|M7|华为|m7|海狗|higo|已为你隐藏黑名单发布的内容|怎么样|假如|如果|吗|毒点|女拳|女权|小土豆|女.*pua|pua.*女|女.*觉醒|厌女|小仙女|小红书|彩礼|xxn|XXN|XxN|xXn|Xxn|xxN|ghg|xhs|董宇辉|南.*北|北.*南|华为/;
+const subjectRegex = /余承东|余大嘴|鸿蒙|M9|m9|问界|M7|华为|m7|海狗|higo|已为你隐藏黑名单发布的内容|怎么样|假如|如果|吗|毒点|女拳|女权|小土豆|女.*pua|pua.*女|女.*觉醒|厌女|小仙女|小红书|彩礼|xxn|XXN|XxN|xXn|Xxn|xxN|ghg|xhs|董宇辉|南.*北|北.*南|华为/;
 
 // 楼层内容关键字
-const contentRegex = /问界|M7|华为|m7|海狗|higo|毒点|已为你隐藏黑名单发布的内容/;
+const contentRegex = /余承东|余大嘴|问界|M7|华为|m7|海狗|higo|毒点|已为你隐藏黑名单发布的内容/;
 
 // 子版块
 const forumnameRegex = /弱智吧吧主|二手交易|NGATOYS|优惠信息.*|影音讨论区|小窗视界|青玉巫婆|游戏综合|生命之杯|汽车俱乐部|篮球|萌萌宠物|狼人杀|娱乐吃瓜|晴风村|桌游讨论|剧本杀|永歌森林|国际新闻|视频与主播|鹅鸭杀/;
