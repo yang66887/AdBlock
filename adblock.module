@@ -44,17 +44,17 @@ DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
 
 [URL Rewrite]
 # 游民星空
-^https?:\/\/appapi\d?click\.gamersky\.com.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/ad/.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/app/.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/userCenterPage\/.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/recommend.*$ - Reject
-^https?:\/\/appapi\d?\.gamersky\.com\/v5\/CheckLogin.*$ - Reject
+^https?:\/\/appapi\d+?click\.gamersky\.com.*$ - Reject
+^https?:\/\/router\d+?\.gamersky\.com\/@\/ad/.*$ - Reject
+^https?:\/\/router\d+?\.gamersky\.com\/@\/app/.*$ - Reject
+^https?:\/\/router\d+?\.gamersky\.com\/@\/userCenterPage\/.*$ - Reject
+^https?:\/\/router\d+?\.gamersky\.com\/@\/recommend.*$ - Reject
+^https?:\/\/appapi\d+?\.gamersky\.com\/v5\/CheckLogin.*$ - Reject
 ^https?:\/\/item-statistics\.gamersky\.com:8089\/statistics\/event.*$ - Reject
-^https?:\/\/router\d?\.gamersky\.com\/@\/search/getRecommendSearchKeys/.*$ - Reject
+^https?:\/\/router\d+?\.gamersky\.com\/@\/search/getRecommendSearchKeys/.*$ - Reject
 
 [Script]
-游民星空版面清理=type=http-response,pattern=^https?:\/\/router\d?\.gamersky\.com\/@\/(lists\/getListElements|homePage\/index),requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
+游民星空版面清理=type=http-response,pattern=^https?:\/\/router\d+?\.gamersky\.com\/@\/(lists\/getListElements|homePage\/index),requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/gamersky.js
 
 [MITM]
 hostname = %APPEND% *.google.cn,*.googlevideo.com,*.youtube.com,*.googleapis.com,*.gamersky.com,*.adtroop.cn,*.umeng.com,*.baidu.com,*.bilibili.com,*.bilivideo.com,*.ubixioe.com,*.xd.cn*.kuaishou.com
