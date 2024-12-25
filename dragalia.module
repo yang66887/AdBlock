@@ -1,0 +1,10 @@
+#!url=https://raw.githubusercontent.com/yang66887/AdBlock/main/shanqiu.module
+#!name = 龙约后台
+#!desc = 自定义礼物
+#!author = 11111
+
+[Script]
+龙约GM=type=http-request,pattern=^https?:\/\/www.jokerxyc.top:3000\/api\/savefile\/edit,requires-body=1,script-path=https://raw.githubusercontent.com/yang66887/AdBlock/main/dragalia.js
+
+[MITM]
+hostname = %APPEND% *.jokerxyc.top
