@@ -1,9 +1,11 @@
-var body = JSON.parse($request.body);
+var body = JSON.parse($response.body);
 
-var presents = body.presents
+var types = body.types
 
-presents.length = 0
+var a_items = body.availableItems
 
-presents[0] = {"type":"Material","quantity":1,"item":"104001013"}
+types[4] = {"type" : "rupies", "hasQuantity" : "True"}
+
+a_items.rupies = [{"id" : 0}]
 
 $done({body: JSON.stringify(body)})
