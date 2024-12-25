@@ -1,4 +1,4 @@
-var body = JSON.parse($response.body);
+var body = JSON.parse($request.body);
 
 var presents = body.presents
 
