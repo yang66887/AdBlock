@@ -21,6 +21,8 @@ DOMAIN-SUFFIX,xd.cn,Reject
 DOMAIN-SUFFIX,tagtic.cn,Reject
 DOMAIN-SUFFIX,e.kuaishou.com,Reject
 DOMAIN-SUFFIX,yangkeduo.com,Reject
+DOMAIN-SUFFIX,sigmob.cn
+DOMAIN-SUFFIX,adukwai.com
 DOMAIN-SUFFIX,zijieapi.com,reject-200
 DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,reject-200
 DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,reject-200
