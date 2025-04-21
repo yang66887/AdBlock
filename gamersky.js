@@ -23,6 +23,12 @@ if (listElements)
   for (let i = listElements.length - 1; i >= 0; i--)
   {
     let temp = listElements[i];
+    //广告ID过滤
+    if (temp.adId && temp.adId != "0")
+    {
+      listElements.splice(i, 1);
+      continue;
+    }
     //屏蔽幻灯片与横幅
     if (temp.type.match(typeRegex))
     {
