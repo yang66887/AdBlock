@@ -20,9 +20,16 @@ if (channels)
 if (listElements)
 {
   var typeRegex = /huanDeng|hengFu/;
+  var titleRegex = /最后生还者|刘浩存/
   for (let i = listElements.length - 1; i >= 0; i--)
   {
     let temp = listElements[i];
+    //标题过滤
+    if (temp.title && temp.title.match(titleRegex))
+    {
+      listElements.splice(i, 1);
+      continue;
+    }
     //广告ID过滤
     if (temp.adId && temp.adId != "0")
     {
