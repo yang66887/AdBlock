@@ -8,13 +8,13 @@
 #^https?:\/\/ngabbs\.com https://bbs.nga.cn header
 #^https?:\/\/ngabbs\.com https://nga.178.com header
 # 首页banner广告
-^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - REJECT-ARRAY
+^https?:\/\/(ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=app_inter&__act=(banner_list|recmd_topic)$ - REJECT
 # 首页官方推荐
-^https?:\/\/((ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT-ARRAY
+^https?:\/\/((ngabbs\.com|bbs\.nga\.cn|nga\.178\.com)\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ - REJECT
 # 首页签到活动
-^https?:\/\/ngabbs\.com\/misc\/event\/.*$ - REJECT-ARRAY
+^https?:\/\/ngabbs\.com\/misc\/event\/.*$ - REJECT
 # 首页底部导航栏中间位置广告
-^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ REJECT-ARRAY
+^https?:\/\/ngabbs\.com\/nuke\.php\?__lib=nga_index&__act=get_event_app.*$ REJECT
 
 [Script]
 # 关键字过滤+黑名单用户主题帖、楼层屏蔽
