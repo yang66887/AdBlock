@@ -42,6 +42,7 @@ DOMAIN-SUFFIX,douyinpic.com,reject-200
 DOMAIN-SUFFIX,ugdtimg.com,reject-200
 DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,reject-200
 DOMAIN-SUFFIX,anythinktech.com,reject-200
+DOMAIN-SUFFIX,jump-game.com,reject-200
 # youtube
 #DOMAIN-SUFFIX,ggpht.com,reject-200
 
