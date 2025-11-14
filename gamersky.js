@@ -43,14 +43,14 @@ if (listElements)
       listElements.splice(i, 1);
       continue;
     }
-    //屏蔽社区交流
-    if (temp.publishTimeCaption.match(publishTimeCaptionRegex))
+    //屏蔽热销推荐与专题
+    if (temp.childElements)
     {
       listElements.splice(i, 1);
       continue;
     }
-    //屏蔽热销推荐与专题
-    if (temp.childElements)
+    //屏蔽社区交流
+    if (temp.publishTimeCaption.match(publishTimeCaptionRegex))
     {
       listElements.splice(i, 1);
       continue;
