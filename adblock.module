@@ -46,6 +46,7 @@ DOMAIN-SUFFIX,jump-game.com,reject-200
 DOMAIN-SUFFIX,beizi.biz,reject-200
 DOMAIN-SUFFIX,hubcloud.com.cn,reject-200
 DOMAIN-SUFFIX,shuzilm.cn,reject-200
+DOMAIN-SUFFIX,gepush.com,reject-200
 # youtube
 #DOMAIN-SUFFIX,ggpht.com,reject-200
 
